@@ -19,7 +19,7 @@ const CARDS = [
     title: { pt: 'Prática & Autonomia', en: 'Practice & Autonomy' },
     body: {
       pt: 'Experiência consolidada em sistemas administrativos reais de missão crítica somada ao desenvolvimento ativo de produtos independentes, gerindo ponta a ponta o ciclo de vida da aplicação.',
-      en: 'Solid experience with real, mission-critical admin systems, combined with active development of independent products — managing the full application lifecycle end to end.',
+      en: 'Solid experience with real, mission-critical admin systems, combined with active development of independent products, managing the full application lifecycle end to end.',
     },
     note: { pt: 'Resiliência corporativa comprovada', en: 'Proven corporate resilience' },
   },

@@ -10,8 +10,8 @@ export const journey: JourneyStep[] = [
     index: '01',
     title: { pt: 'Início', en: 'Getting Started' },
     description: {
-      pt: 'Comecei a me interessar por desenvolvimento web antes de entrar no mercado, experimentando na prática e entendendo como as peças se encaixam — o que acontece no navegador, como o servidor responde, como um produto funciona de verdade.',
-      en: 'I got interested in web development before entering the job market, experimenting hands-on and understanding how the pieces fit together — what happens in the browser, how the server responds, how a product actually works.',
+      pt: 'Comecei a me interessar por desenvolvimento web antes de entrar no mercado, mexendo por conta própria e entendendo como as peças se encaixam: o que acontece no navegador, como o servidor responde, como um produto funciona de verdade.',
+      en: "I got interested in web development before entering the job market, tinkering on my own and figuring out how the pieces fit together: what happens in the browser, how the server responds, how a product actually works.",
     },
   },
   {
@@ -34,24 +34,24 @@ export const journey: JourneyStep[] = [
     index: '04',
     title: { pt: 'Desenvolvedor Júnior', en: 'Junior Developer' },
     description: {
-      pt: 'A evolução para Desenvolvedor de Software Júnior veio com mais responsabilidade sobre o código que entregava. Deixei de só implementar e passei a pensar mais no impacto de cada decisão — na arquitetura, na manutenção e na experiência do usuário.',
-      en: 'The move to Junior Software Developer came with more responsibility for the code I shipped. I stopped just implementing and started thinking more about the impact of each decision — on architecture, maintenance, and user experience.',
+      pt: 'A evolução para Desenvolvedor de Software Júnior veio com mais responsabilidade sobre o código que entregava. Deixei de só implementar e passei a pensar no impacto de cada decisão na arquitetura, na manutenção, na experiência do usuário.',
+      en: 'The move to Junior Software Developer came with more responsibility for the code I shipped. I stopped just implementing and started thinking about how each decision affected architecture, maintenance, and user experience.',
     },
   },
   {
     index: '05',
     title: { pt: 'Svelte & SvelteKit', en: 'Svelte & SvelteKit' },
     description: {
-      pt: 'Participei da migração de sistemas de Angular para Svelte, o que exigiu entender os dois mundos ao mesmo tempo. Esse processo me deu uma visão mais clara sobre como frameworks resolvem os mesmos problemas de maneiras diferentes — e quando cada escolha faz sentido.',
-      en: 'I took part in migrating systems from Angular to Svelte, which required understanding both worlds at once. That process gave me a clearer view of how frameworks solve the same problems differently — and when each choice makes sense.',
+      pt: 'Participei da migração de sistemas de Angular para Svelte, o que exigiu entender os dois mundos ao mesmo tempo. Isso me deu uma visão mais clara de como frameworks resolvem os mesmos problemas de formas diferentes, e de quando cada escolha faz sentido.',
+      en: 'I took part in migrating systems from Angular to Svelte, which required understanding both worlds at once. It gave me a clearer view of how frameworks solve the same problems in different ways, and when each choice actually makes sense.',
     },
   },
   {
     index: '06',
     title: { pt: 'Projetos próprios', en: 'Personal Projects' },
     description: {
-      pt: 'Comecei a construir produtos fora do trabalho, onde eu precisava tomar todas as decisões — desde a stack até a experiência do usuário. Esse espaço me ajudou a desenvolver uma visão mais completa do que significa construir um produto do começo ao fim.',
-      en: 'I started building products outside of work, where I had to make every decision myself — from the stack to the user experience. That space helped me develop a more complete view of what it means to build a product from start to finish.',
+      pt: 'Comecei a construir produtos fora do trabalho, onde eu precisava tomar todas as decisões: da stack até a experiência do usuário. Isso me ajudou a entender melhor o que significa construir um produto do começo ao fim.',
+      en: 'I started building products outside of work, where I had to make every decision myself, from the stack to the user experience. It helped me understand what it really means to build a product from start to finish.',
     },
   },
   {

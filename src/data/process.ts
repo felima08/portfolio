@@ -34,8 +34,8 @@ export const processSteps: ProcessStep[] = [
     index: '04',
     title: { pt: 'IA', en: 'AI' },
     description: {
-      pt: 'Usar IA como ferramenta dentro do processo — não como substituta.',
-      en: 'Use AI as a tool within the process — not as a replacement.',
+      pt: 'Usar IA como ferramenta dentro do processo, não como substituta.',
+      en: 'Use AI as a tool within the process, not as a replacement.',
     },
     isAI: true,
   },

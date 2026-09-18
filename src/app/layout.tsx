@@ -14,11 +14,11 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Felipe Gonçalves — Software Developer',
+  title: 'Felipe Gonçalves | Software Developer',
   description:
-    'Felipe Gonçalves, Software Developer. Transformo ideias em produtos digitais — frontend, backend e inteligência artificial.',
+    'Felipe Gonçalves, Software Developer. Transformo ideias em produtos digitais, unindo frontend, backend e inteligência artificial.',
   openGraph: {
-    title: 'Felipe Gonçalves — Software Developer',
+    title: 'Felipe Gonçalves | Software Developer',
     description: 'Transformo ideias em produtos digitais.',
     locale: 'pt_BR',
     type: 'website',
