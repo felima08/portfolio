@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { useLanguage } from '@/lib/language'
 import { getDictionary } from '@/data/dictionary'
@@ -21,6 +21,7 @@ const SECTION_IDS = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const mobileMenuRef = useRef<HTMLDivElement>(null)
   const activeId = useScrollSpy(SECTION_IDS)
   const { lang, toggleLang } = useLanguage()
   const t = getDictionary(lang).nav
@@ -47,6 +48,16 @@ export default function Nav() {
     document.body.style.overflow = menuOpen ? 'hidden' : ''
     return () => {
       document.body.style.overflow = ''
+    }
+  }, [menuOpen])
+
+  // O painel mobile fica no DOM o tempo todo (só troca opacidade/visibilidade),
+  // então a rolagem interna dele persiste entre aberturas. Sem isso, se o
+  // usuário rolar até "Contato" e fechar, a próxima abertura reaparece já
+  // rolada, cortando os primeiros itens.
+  useEffect(() => {
+    if (menuOpen && mobileMenuRef.current) {
+      mobileMenuRef.current.scrollTop = 0
     }
   }, [menuOpen])
 
@@ -126,7 +137,7 @@ export default function Nav() {
         </div>
       </div>
 
-      <div className={`nav__mobile ${menuOpen ? 'is-open' : ''}`}>
+      <div ref={mobileMenuRef} className={`nav__mobile ${menuOpen ? 'is-open' : ''}`}>
         {LINKS.map((link, i) => (
           <a
             key={link.id}
