@@ -56,7 +56,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 1.5rem);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -127,7 +126,7 @@ ol {
 
 .section {
   padding-block: 7rem;
-  scroll-margin-top: var(--nav-h);
+  scroll-margin-top: calc(var(--nav-h) + 1.5rem);
 }
 
 .section--alt {
