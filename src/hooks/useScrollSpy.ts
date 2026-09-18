@@ -8,8 +8,13 @@ import { useEffect, useState } from 'react'
  * Usa a linha logo abaixo da navbar como referência: a seção ativa é a última
  * cujo topo já passou por essa linha. No fim da página, força a última seção
  * (senão seções curtas no rodapé nunca ficariam ativas).
+ *
+ * IMPORTANTE: `offset` precisa ser >= ao `scroll-margin-top` de `.section`
+ * no globals.css (hoje: --nav-h + 1.5rem = 76 + 24 = 100px). Se for menor,
+ * ao clicar num link do menu a seção pousa corretamente, mas o link errado
+ * (o anterior) fica destacado — foi exatamente esse bug que aconteceu aqui.
  */
-export function useScrollSpy(ids: string[], offset = 96) {
+export function useScrollSpy(ids: string[], offset = 112) {
   const [activeId, setActiveId] = useState<string>(ids[0] ?? '')
 
   useEffect(() => {
