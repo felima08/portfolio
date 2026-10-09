@@ -23,17 +23,26 @@ export const projects: Project[] = [
       en: 'An application that puts artificial intelligence at the center of the experience, connecting training, nutrition, tracking, and AI interaction.',
     },
     status: 'em-desenvolvimento',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vercel'],
+    stack: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Claude AI', 'Vercel'],
     team: true,
-    // TODO: adicionar imagem em /public/projects/classfit-ia.png e preencher `image`
-    // TODO: adicionar links (demo / github) quando disponíveis
+    image: 'classfit-ia.png',
+    links: {
+      demo: 'https://app-fit-ia-tau.vercel.app/',
+    },
   },
   {
-    id: 'projeto-2',
-    name: '', // TODO: preencher depois
-    description: { pt: '', en: '' },
-    status: 'concluido',
-    stack: [],
+    id: 'lead-prospection',
+    name: 'Lead Prospection',
+    description: {
+      pt: 'Plataforma que encontra empresas numa região e usa IA pra identificar quem precisa de um site ou de mais presença digital, organizando tudo num painel de prospecção.',
+      en: 'A platform that finds businesses in a region and uses AI to identify who needs a website or better online presence, organizing everything in a prospecting dashboard.',
+    },
+    status: 'em-desenvolvimento',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Stripe', 'Claude AI'],
+    image: 'lead-prospection.jpg',
+    links: {
+      demo: 'https://lead-prospection-psi.vercel.app/',
+    },
   },
   {
     id: 'projeto-3',

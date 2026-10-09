@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { projects, statusLabel } from '@/data/projects'
 import { useReveal } from '@/hooks/useReveal'
 import { useLanguage } from '@/lib/language'
@@ -39,14 +40,37 @@ export default function Projects() {
               )
             }
 
+            const thumb = project.image ? (
+              <div className="project__thumb-inner">
+                <Image
+                  src={`/projects/${project.image}`}
+                  alt={project.name}
+                  fill
+                  sizes="(max-width: 1023px) 100vw, 320px"
+                  className="project__thumb-img"
+                />
+              </div>
+            ) : (
+              <div className="project__thumb-inner">
+                <span className="project__thumb-empty">{project.name}</span>
+              </div>
+            )
+
             return (
               <div key={project.id} className="project" data-reveal>
-                <div className="project__thumb">
-                  {/* TODO: adicionar em /public/projects/{project.id}.png */}
-                  <div className="project__thumb-inner">
-                    <span className="project__thumb-empty">{project.name}</span>
-                  </div>
-                </div>
+                {project.links?.demo ? (
+                  <a
+                    href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project__thumb"
+                    aria-label={project.name}
+                  >
+                    {thumb}
+                  </a>
+                ) : (
+                  <div className="project__thumb">{thumb}</div>
+                )}
 
                 <div className="project__body">
                   <div className="project__head">

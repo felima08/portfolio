@@ -877,6 +877,7 @@ ol {
 }
 
 .project__thumb-inner {
+  position: relative;
   width: 100%;
   height: 100%;
   display: grid;
@@ -886,6 +887,10 @@ ol {
 
 .project:hover .project__thumb-inner {
   transform: scale(1.015);
+}
+
+.project__thumb-img {
+  object-fit: cover;
 }
 
 .project__thumb-empty {
