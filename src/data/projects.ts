@@ -23,7 +23,7 @@ export const projects: Project[] = [
       en: 'An application that puts artificial intelligence at the center of the experience, connecting training, nutrition, tracking, and AI interaction',
     },
     status: 'em-desenvolvimento',
-    stack: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Claude AI', 'Vercel'],
+    stack: ['React', 'TypeScript', 'Node.js', 'Supabase'],
     team: true,
     image: 'classfit-ia.png',
     links: {
