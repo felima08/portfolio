@@ -19,8 +19,8 @@ export const projects: Project[] = [
     id: 'classfit-ia',
     name: 'ClassFit IA',
     description: {
-      pt: 'Aplicação que coloca a inteligência artificial no centro da experiência, conectando treino, alimentação, acompanhamento e interação com IA.',
-      en: 'An application that puts artificial intelligence at the center of the experience, connecting training, nutrition, tracking, and AI interaction.',
+      pt: 'Aplicação que coloca a inteligência artificial no centro da experiência, conectando treino, alimentação, acompanhamento e interação com IA',
+      en: 'An application that puts artificial intelligence at the center of the experience, connecting training, nutrition, tracking, and AI interaction',
     },
     status: 'em-desenvolvimento',
     stack: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Claude AI', 'Vercel'],
@@ -34,11 +34,11 @@ export const projects: Project[] = [
     id: 'lead-prospection',
     name: 'Lead Prospection',
     description: {
-      pt: 'Plataforma que encontra empresas numa região e usa IA pra identificar quem precisa de um site ou de mais presença digital, organizando tudo num painel de prospecção.',
-      en: 'A platform that finds businesses in a region and uses AI to identify who needs a website or better online presence, organizing everything in a prospecting dashboard.',
+      pt: 'Plataforma que encontra empresas numa região e usa IA pra identificar quem precisa de um site ou de mais presença digital, organizando tudo num painel de prospecção',
+      en: 'A platform that finds businesses in a region and uses AI to identify who needs a website or better online presence, organizing everything in a prospecting dashboard',
     },
     status: 'em-desenvolvimento',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Stripe', 'Claude AI'],
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     image: 'lead-prospection.jpg',
     links: {
       demo: 'https://lead-prospection-psi.vercel.app/',
